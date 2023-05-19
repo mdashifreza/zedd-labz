@@ -19,9 +19,13 @@ const Question6Child: React.FC<ChildComponentProps> = ({ onDataReceived }) => {
     };
 
     return (
-        <div style={{height: '500px'}} className='text-center items-center mt-10'>
-            <input type="text" value={inputValue} onChange={handleInputChange} className='border-2'/><br></br>
-            <button onClick={handleButtonClick} className='bg-blue-500 text-white rounded-sm mt-2 p-3'>Send Data</button>
+        <div style={{height: '300px'}} className='text-center items-center bg-teal-200 p-10'>
+            <p className='float-left text-3xl font-bold'>Question 6</p>
+            <p className=' text-xl font-bold'>I am sending input data from child component into parent component by using state variable</p>
+            <div className='items-center text-center'>
+            <input type="text" value={inputValue} onChange={handleInputChange} className='border-2 p-2 mt-5'/><br></br>
+            <button onClick={handleButtonClick} className='border-2 border-white font-extrabold text-xl mt-5 text-white rounded-sm mt-2 p-3'>Submit</button>
+            </div>
         </div>
     );
 }

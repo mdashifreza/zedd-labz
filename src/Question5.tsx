@@ -14,12 +14,16 @@ const Question5: React.FC = () => {
     return (
         <div>
             <div style={{ height: '800px' }} className='bg-teal-700 text-center pt-10 text-white font-bold'>
-                <button onClick={handleButtonClick} className='bg-blue-400 rounded-md border-2 text-2xl'>Scroll to next div</button>
+            <pre className='text-3xl float-left'>Question 5</pre><br /><br></br>
+            <div>
+            In this task I have used useRef hook to scroll to another div
+This is the Primary div which has button which onclick slides to another div
             </div>
-
+                <button onClick={handleButtonClick} className='bg-blue-400 p-2 rounded-md border-2 text-2xl mt-7'>Scroll to next div</button>
+            </div>
             {/* The div to scroll to */}
             <div ref={divRef} style={{ height: '500px' }} className='bg-yellow-600 text-center pt-10 text-white text-2xl font-bold'>
-                Scrolled to this div
+                    Screen is scrolled to this component.
             </div>
         </div>
     );

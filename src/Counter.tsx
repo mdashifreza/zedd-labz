@@ -14,12 +14,15 @@ const Counter: React.FC = () => {
     };
 
     return (
-        <div className='bg-gray-600 h-48 w-full items-center text-center flex'>
+        <div className='bg-gray-600 h-96 w-full items-center text-center flex pr-5 text-white font-semibold'>
             <Display count={count}/>
-            <div className='flex flex-col justify-between'>
-                {count}
-            <button onClick={increment} className='bg-blue-500 text-xl font-semibold text-white p-2'>Increment</button>
-            <button onClick={decrement} className='bg-blue-500 text-xl font-semibold text-white p-2'>Decrement</button>
+            <div><h1 className='text-2xl font-semibold'>Question 2</h1><br></br>For this task , i have used useEffect hook to update regarding the state value of count of this functional component.
+        <span className='text-red-500'>The value of count is being stored in Redux store.</span>
+        </div>
+            <div className='flex flex-col justify-center'>
+                Count: {count}
+            <button onClick={increment} className='border-2 mb-2  text-xl font-semibold text-white p-2 float-right'>Increment</button>
+            <button onClick={decrement} className='border-2 mb-2  text-xl font-semibold text-white p-2'>Decrement</button>
             </div>
         </div>
     );
